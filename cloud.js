@@ -6,7 +6,7 @@ const requestjson = require('request-json');
  * 一个简单的云代码方法
 
  AV.Cloud.define('hello', function(request) {
-  var token = AV.Object.createWithoutData('Global', '5957121e128fe100582b6461');
+  var token = AV.Object.createWithoutData('Global', '*****');
   token.set('value', 'hello');
   token.save();
   return 'Hello world!';
