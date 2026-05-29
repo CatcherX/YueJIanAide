@@ -39,5 +39,5 @@ LEANCLOUD_APP_ID=<id> LEANCLOUD_APP_KEY=<key> LEANCLOUD_APP_MASTER_KEY=<master_k
 
 - **No linter, no test framework** — the project has no `eslint`, `prettier`, or test scripts configured.
 - **Node engine mismatch** — `package.json` specifies `"node": "6.x"` but the app works fine on modern Node (v22+). `npm install` will emit `EBADENGINE` warnings; these are harmless.
-- **No lock file** — there is no `package-lock.json` committed, so dependency versions may drift across installs.
+- **Lock file committed** — `package-lock.json` is checked in for reproducible installs.
 - **LeanCloud credentials required for data operations** — without valid credentials, the server starts and the homepage renders, but any route that touches LeanCloud storage returns HTTP 400.
